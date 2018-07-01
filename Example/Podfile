@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YLLuseLib_Example' do
+  pod 'YLLuseLib', :path => '../'
+
+  target 'YLLuseLib_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
