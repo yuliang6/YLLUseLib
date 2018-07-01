@@ -1,11 +1,13 @@
+
+source 'https://github.com/yuliang6/taixTest.git'
+source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'YLLuseLib_Example' do
   pod 'YLLuseLib', :path => '../'
-
+  pod 'YLLLib'
   target 'YLLuseLib_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
   end
 end
